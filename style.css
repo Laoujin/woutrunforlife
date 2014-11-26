@@ -1,7 +1,25 @@
-# {
-
+body {
+	background-color: #9FFBF3;
 }
 
-. {
+header {
+	position: absolute;
+	left: 240px;
+	top: 0px;
+}
 
+#mario-start, #mario-animation {
+	width: 130px;
+	height: 317px;
+	border: 1px solid black;
+}
+
+#mario-animation {
+	display: none;
+}
+
+#form {
+	position: absolute;
+	left: 240px;
+	top: 0px;
 }

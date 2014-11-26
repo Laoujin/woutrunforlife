@@ -1,7 +1,5 @@
 $(function() {
-
+	console.log("yaye");
+	
+	
 });
-
-(function(namespace) {
-
-})(namespace);
