@@ -31,12 +31,14 @@ $(function() {
 				} else {
 					coinSound2.play();
 				}
+				
+				setTimeout(function() {
+					amount += 0.25;
+					$("#savedAmount").val(amount);
+					enableSubmit();
+					amountBox.text(amount.toFixed(2));
+				}, 300);
 			}, 200);
-			
-			amount += 0.25;
-			$("#savedAmount").val(amount);
-			enableSubmit();
-			amountBox.fadeOut().text(amount.toFixed(2)).fadeIn();
 		}, 10);
 	});
 	
