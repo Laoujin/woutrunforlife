@@ -1,0 +1,7 @@
+CREATE TABLE sponsors (
+         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         name VARCHAR(100),
+         email VARCHAR(100)
+       );
+	   
+alter table sponsors add columns amount decimal not null;

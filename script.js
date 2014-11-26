@@ -34,10 +34,10 @@ $(function() {
 			}, 200);
 			
 			amount += 0.25;
+			$("#savedAmount").val(amount);
+			enableSubmit();
 			amountBox.fadeOut().text(amount.toFixed(2)).fadeIn();
 		}, 10);
-		
-		enableSubmit();
 	});
 	
 	$("input[name='name']").change(function() {
