@@ -56,3 +56,10 @@ header {
 	left: 240px;
 	top: 227px;
 }
+
+#currentSponsors {
+	position: absolute;
+	left: 10px;
+	top: 570px;
+	width: 300px;
+}
