@@ -1,5 +1,14 @@
 body {
 	background-color: #9FFBF3;
+	font-family: brandon, sans-serif;
+}
+
+h1 {
+	font-size: 27px;
+}
+
+h2 {
+	font-size: 16px;
 }
 
 header {
@@ -8,10 +17,34 @@ header {
 	top: 0px;
 }
 
+#gamebox {
+	position: absolute;
+	width: 220px;
+	top: 127px;
+	margin-top: 5px;
+	padding-left: 45px;
+}
+
+#amountbox {
+	font-size: 36px;
+	color: gold;
+	border: 2px solid gold;
+	text-align: center;
+	width: 130px;
+	
+}
+
 #mario-start, #mario-animation {
 	width: 130px;
 	height: 317px;
-	border: 1px solid black;
+}
+
+#jumperbox {
+	margin-top: 3px;
+}
+
+#jumper {
+	width: 130px;
 }
 
 #mario-animation {
@@ -21,5 +54,5 @@ header {
 #form {
 	position: absolute;
 	left: 240px;
-	top: 0px;
+	top: 227px;
 }
