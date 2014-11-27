@@ -1,6 +1,7 @@
 body {
 	background-color: #9FFBF3;
 	font-family: brandon, sans-serif;
+	padding: 5px;
 }
 
 h1 {
@@ -11,32 +12,40 @@ h2 {
 	font-size: 16px;
 }
 
+h1 > h2 {
+	margin-top: -10px;
+}
+
 header {
-	position: absolute;
+	/*position: absolute;
 	left: 240px;
-	top: 0px;
+	top: 0px;*/
 }
 
 #gamebox {
-	position: absolute;
+	/*position: absolute;
 	width: 220px;
-	top: 127px;
-	margin-top: 5px;
-	padding-left: 45px;
+	top: 127px;*/
+	/*margin-top: 5px;
+	padding-left: 45px;*/
+	/*border: 1px solid black;*/
 }
 
 #amountbox {
 	font-size: 36px;
 	color: gold;
 	border: 2px solid gold;
-	text-align: center;
-	width: 130px;
-	
+	/*text-align: center;
+	width: 130px;*/
+}
+
+#resetamount {
+	margin-top: -15px;
 }
 
 #mario-start, #mario-animation {
-	width: 130px;
-	height: 317px;
+	/*width: 130px;
+	height: 317px;*/
 }
 
 #jumperbox {
@@ -52,14 +61,17 @@ header {
 }
 
 #form {
-	position: absolute;
+	/*position: absolute;
 	left: 240px;
-	top: 227px;
+	top: 227px;*/
+	/*vertical-align: bottom;*/
+	/*border: 1px solid black;*/
+	width: 250px;
 }
 
 #currentSponsors {
-	position: absolute;
+	/*position: absolute;
 	left: 10px;
 	top: 570px;
-	width: 300px;
+	width: 300px;*/
 }

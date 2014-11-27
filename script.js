@@ -14,6 +14,12 @@ $(function() {
 			$("button[type='submit']").prop('disabled', false);
 		}
 	}
+
+	function updateAmount(newAmount) {
+		amount = newAmount;
+		$("#savedAmount").val(newAmount);
+		amountBox.text(newAmount.toFixed(2));
+	}
 	
 	$("#jumper").click(function() {
 		if (startImageBox.is(":visible")) {
@@ -33,16 +39,33 @@ $(function() {
 				}
 				
 				setTimeout(function() {
-					amount += 0.25;
-					$("#savedAmount").val(amount);
+					updateAmount(amount + 0.25);
 					enableSubmit();
-					amountBox.text(amount.toFixed(2));
+					
 				}, 300);
 			}, 200);
 		}, 10);
 	});
+
+	$("#resetamount").click(function() {
+		var img = this;
+
+		setTimeout(function() {
+			updateAmount(0);
+		}, 500);
+
+		this.src = "images/resetamount.gif";
+		setTimeout(function() {
+			img.src = "images/resetamount-start.gif";
+		}, 700);
+	});
 	
 	$("input[name='name']").change(function() {
 		enableSubmit();
+	});
+
+	$("#openSponsors").click(function() {
+		$("#currentSponsors").removeClass("hidden");
+		$("#sponsorOpener").hide();
 	});
 });
