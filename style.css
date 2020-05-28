@@ -35,8 +35,8 @@ header {
 	font-size: 36px;
 	color: gold;
 	border: 2px solid gold;
-	/*text-align: center;
-	width: 130px;*/
+	text-align: center;
+	/*width: 130px;*/
 }
 
 #resetamount {

@@ -8,7 +8,7 @@ $success = false;
 // }
 // else
 // {
-$mysqli = new mysqli("pongit", "root", "my-secret-pw", "woutrunforlive", 6666);
+$mysqli = new mysqli("mysql", "root", "my-secret-pw", "woutrunforlive");
 // }
 
 if (isset($_POST['done']))
@@ -43,7 +43,7 @@ if (isset($_POST['done']))
 
 <script type='text/javascript'>
 	$(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
+		$('[data-toggle="tooltip"]').tooltip()
 	})
 </script>
 
