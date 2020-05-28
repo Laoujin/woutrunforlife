@@ -98,7 +98,7 @@ if ($success)
 	<div class="pull-right">
 		<div id='amountbox'>€ <span id='amount'>0.00</span> <img src="images/resetamount-start.gif" id="resetamount" data-toggle="tooltip" data-placement="right" title="Klik om het bedrag te resetten!"></div>
 		<div id='mario-start'>
-			<img src='images/animation-start.png'>
+			<img src='images/animation-start.gif'>
 		</div>
 		<div id='mario-animation'>
 			<img src='images/animation.gif' id='mario-animation-img'>

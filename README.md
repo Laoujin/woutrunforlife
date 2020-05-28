@@ -3,11 +3,10 @@ woutrunforlife
 
 Mario collecting gold coins for Wout his StuBru RunForLife participation.
 
-Well I was going to send him this to nudge him to go through with it this time but:  
-For some reason the `images` (containing the images & sounds) are gitignored and I can't seem to find them :(
+For some reason the `images` (containing the images & sounds) were gitignored and I lost them :(
 
-Bugs:
-- Money is not saved as a decimal in the db
+I puzzled it back together but I have no idea what `images/resetamount-start.gif`
+and `images/resetamount.gif` looked like, so this functionality is no longer available.
 
 
 Startup
@@ -36,3 +35,8 @@ docker run --name woutrunforlife-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-se
 ```
 
 Execute the statements in `migrations.txt` (manually).
+
+Bugs
+----
+
+- Money is not saved as a decimal to the db
