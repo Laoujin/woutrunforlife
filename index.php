@@ -66,7 +66,7 @@ if (isset($_POST['done']))
 
 <header class="navbar navbar-default">
 	<table><tr>
-		<td width="1%"><img src='images/stubrulogo.png' width='220' height='124'></td>
+		<td width="1%"><img src='images/stubrulogo.png' style="max-width: 220px; max-height: 124px"></td>
 		<td width="99%" style="padding-left: 3px">
 			<h1>Run For Life</h1>
 			<h2>Help <a href='https://www.facebook.com/Woutvda'>Wout</a> Music For Life te sponseren!</h2>

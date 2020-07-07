@@ -8,7 +8,7 @@ $(function() {
 		coinSound = new Audio("images/coin.wav"),
 		coinSound2 = new Audio("images/coin.wav"),
 		currentCoinSound = true;
-	
+
 	function enableSubmit() {
 		if (amount > 0 && $("input[name='name']").val().length !== 0) {
 			$("button[type='submit']").prop('disabled', false);
@@ -20,7 +20,7 @@ $(function() {
 		$("#savedAmount").val(newAmount);
 		amountBox.text(newAmount.toFixed(2));
 	}
-	
+
 	$("#jumper").click(function() {
 		if (startImageBox.is(":visible")) {
 			startImageBox.hide();
@@ -37,11 +37,11 @@ $(function() {
 				} else {
 					coinSound2.play();
 				}
-				
+
 				setTimeout(function() {
 					updateAmount(amount + 0.25);
 					enableSubmit();
-					
+
 				}, 300);
 			}, 200);
 		}, 10);
@@ -49,6 +49,9 @@ $(function() {
 
 	$("#resetamount").click(function() {
 		var img = this;
+
+		var sound = new Audio("images/resetamount.wav");
+		sound.play();
 
 		setTimeout(function() {
 			updateAmount(0);
@@ -59,7 +62,7 @@ $(function() {
 			img.src = "images/resetamount-start.gif";
 		}, 700);
 	});
-	
+
 	$("input[name='name']").change(function() {
 		enableSubmit();
 	});

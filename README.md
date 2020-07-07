@@ -3,23 +3,21 @@ woutrunforlife
 
 Mario collecting gold coins for Wout his StuBru RunForLife participation.
 
-For some reason the `images` (containing the images & sounds) were gitignored and I lost them :(
-
-I puzzled it back together but I have no idea what `images/resetamount-start.gif`
-and `images/resetamount.gif` looked like, so this functionality is no longer available.
+For some reason the `images` (containing the images & sounds) were gitignored and I lost them :(  
+And... I found them back. So now we have `images` and `images-new` for two fantastic experiences.
 
 
 Startup
 -------
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 Execute the statements in `migrations.txt` (manually).
 
 
-### No longer in use
+### Manual install
 
 #### PHP Server
 
